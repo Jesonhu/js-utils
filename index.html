@@ -14,13 +14,41 @@
   <script src="./dist/app.js"></script>
   <script>
 
-    // 日期相关测试 start =========================
+    // 日期相关功能测试 start =========================
     const cDate1 = new cTools.Date();
 
     console.log( cDate1.format(new Date()) );
     console.log( cDate1.format(new Date(), 'yyyy') );
     console.log( cDate1.format(new Date(), 'dd-MM-yyy hh:mm:ss') );
     // 日期相关测试 end =========================
+
+    // `document` 相关功能测试 start =========================
+    // rem 设置
+    cTools.Doc.setRem(640);
+    // `document` 相关功能测试 end =========================
+
+    // `window` 相关功能测试 start =========================
+    const localStorage_cTools = cTools.Win.localStorage;
+    localStorage_cTools.setLocal('IS_LOGIN', true);
+    const localValue = {
+      name: '张三',
+      avatar: '//xxxxx.xxx.png'
+    }
+    localStorage_cTools.setLocal( false, localValue);
+
+    setTimeout(() => {
+      const localValue2 = {
+        age: 18
+      }
+      localStorage_cTools.setLocal('IS_LOGIN', false);
+      localStorage_cTools.setLocal( false, localValue2, true);
+      console.log('更新了');
+    }, 10000);
+    // `window` 相关功能测试 end =========================
+
+
+
+
   </script>
 </body>
 </html>
