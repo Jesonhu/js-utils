@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hello common tools</title>
+</head>
+<body>
+  <!-- element start -->
+  <div id="app"></div>
+  <!-- element end -->
+
+  <script src="./dist/app.js"></script>
+  <script>
+
+    // 日期相关测试 start =========================
+    const cDate1 = new cTools.Date();
+
+    console.log( cDate1.format(new Date()) );
+    console.log( cDate1.format(new Date(), 'yyyy') );
+    console.log( cDate1.format(new Date(), 'dd-MM-yyy hh:mm:ss') );
+    // 日期相关测试 end =========================
+  </script>
+</body>
+</html>

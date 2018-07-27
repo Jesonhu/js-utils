@@ -1,0 +1,33 @@
+{
+  "name": "js-common-tools",
+  "version": "1.0.0",
+  "description": "JS 常用工具整理",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jesonhu/js-common-tools.git"
+  },
+  "keywords": [
+    "js-common-tools"
+  ],
+  "author": "Jesonhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jesonhu/js-common-tools/issues"
+  },
+  "homepage": "https://github.com/Jesonhu/js-common-tools#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0",
+    "webpack": "^4.16.2",
+    "webpack-command": "^0.4.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
