@@ -1,15 +1,19 @@
 // import EventDispatcher from './must';
-const Date = require('./date');
 
-// 期待使用方式
-// 浏览器中：
-// new window.cTools.Time() // 返回实际处理类
+/** 日期管理类 */
+const Date = require('./date');
+/** `document`下相关属性设置对象 */
+const Doc = require('./document');
+/** `window`相关设置对象 */
+const Win = require('./window');
 
 /**
- * `JavaScript` 常用工具集合
+ * `JavaScript` 常用工具集合对象
  */
 const cTools = {
-  Date: Date
+  Date: Date,
+  Doc: Doc,
+  Win: Win
 }
 
 
