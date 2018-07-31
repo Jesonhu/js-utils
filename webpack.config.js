@@ -22,9 +22,9 @@ const webpack_base_config = {
     // filename: 'app-[hash].js'
     // filename: 'app.js'
     // @see [webpack 第三方库处理](https://www.cnblogs.com/myqianlan/p/5626505.html)
-    filename: "[name].[chunkHash:8].js",
+    filename: "[name].js", // [name].[chunkHash:8].js
     publicPath: '',
-    chunkFilename: "[name].[chunkHash:8].js",
+    chunkFilename: "[name].js",
   },
 
   // @err LoadConfigError: webpack.optimize.CommonsChunkPlugin has been removed, please use config.optimization.splitChunks instead.
