@@ -34,16 +34,17 @@
       name: '张三',
       avatar: '//xxxxx.xxx.png'
     }
-    localStorage_cTools.setLocal( false, localValue);
+    localStorage_cTools.setLocal( '', localValue);
 
     setTimeout(() => {
       const localValue2 = {
+        name: '李四',
         age: 18
       }
       localStorage_cTools.setLocal('IS_LOGIN', false);
-      localStorage_cTools.setLocal( false, localValue2, true);
+      localStorage_cTools.setLocal( 'USER_INFO', localValue2, true);
       console.log('更新了');
-    }, 10000);
+    }, 5000);
     // `window` 相关功能测试 end =========================
 
 

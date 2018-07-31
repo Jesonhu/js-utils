@@ -1,7 +1,7 @@
 /** 时间处理功能函数 */
 // const getNowData = require('./getNowData');
 
-const { isStrEmpty } = require('../common');
+const { isStrEmpty } = require('../util');
 
 /**
  * 日期常用工具类

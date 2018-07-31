@@ -1,7 +1,9 @@
-# js 常用功能整理
+# js 常用功能整理（cTools）
 
 ### 说明
 + 通过 `webpack` 构建，当前仅仅适用于window环境
++ [思维导图1](https://www.processon.com/view/link/5b5fd010e4b053a09c1d68a4)
++ [思维导图2]()
 
 ### 期望功能
 + 使用方式:
