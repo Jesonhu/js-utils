@@ -1,5 +1,10 @@
-const isStrEmpty = require('./isStrEmpty');
+// const isStrEmpty = require('./isStrEmpty');
+const code = require('./code');
+const assets = require('./assets');
 
-module.exports = {
-  isStrEmpty
+const Util = {
+  code: code,
+  assets: assets
 }
+
+module.exports = Util;

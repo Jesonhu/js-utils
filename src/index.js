@@ -6,6 +6,8 @@ const Date = require('./date');
 const Doc = require('./document');
 /** `window`相关设置对象 */
 const Win = require('./window');
+/** `散装`功能封装 */
+const Util = require('./util');
 
 /**
  * `JavaScript` 常用工具集合对象
@@ -13,7 +15,8 @@ const Win = require('./window');
 const cTools = {
   Date: Date,
   Doc: Doc,
-  Win: Win
+  Win: Win,
+  Util: Util
 }
 
 
