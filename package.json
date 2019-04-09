@@ -1,5 +1,5 @@
 {
-  "name": "js-toolkit",
+  "name": "jstoolkit",
   "version": "v0.0.0-beta.1",
   "description": "JS 常用工具整理",
   "main": "dist/index.js",
