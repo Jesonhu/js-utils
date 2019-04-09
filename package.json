@@ -11,7 +11,7 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jesonhu/js-utils.git"
+    "url": "git+https://github.com/Jesonhu/js-utils-helper.git"
   },
   "keywords": [
     "js-utils"
@@ -19,9 +19,9 @@
   "author": "Jesonhu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Jesonhu/js-utils/issues"
+    "url": "https://github.com/Jesonhu/js-utils-helper/issues"
   },
-  "homepage": "https://github.com/Jesonhu/js-utils#readme",
+  "homepage": "https://github.com/Jesonhu/js-utils-helper#readme",
   "devDependencies": {
     "cz-conventional-changelog": "^2.1.0",
     "webpack": "^4.16.2",
