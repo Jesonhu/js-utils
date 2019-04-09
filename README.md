@@ -1,4 +1,6 @@
-# js 常用功能整理（cTools）
+# js 常用功能整理（js-utils-helper(jsUtilsHelper)
+
+Tips: 开发中，暂无法用于项目中(developing, cant't be use in project)
 
 ### 说明
 + 通过 `webpack` 构建，当前仅仅适用于window环境
