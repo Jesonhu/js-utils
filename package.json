@@ -2,7 +2,7 @@
   "name": "js-utils",
   "version": "v0.1.0",
   "description": "JS 常用工具整理",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
