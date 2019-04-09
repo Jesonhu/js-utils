@@ -1,6 +1,6 @@
 {
-  "name": "js-utils",
-  "version": "v0.1.0",
+  "name": "js-toolkit",
+  "version": "v0.0.0-beta.1",
   "description": "JS 常用工具整理",
   "main": "dist/index.js",
   "scripts": {
