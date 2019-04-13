@@ -1,22 +1,30 @@
 // import EventDispatcher from './must';
 
 /** 日期管理类 */
-const Date = require('./date');
+// const Date = require('./date');
 /** `document`下相关属性设置对象 */
-const Doc = require('./document');
+// const Doc = require('./document');
 /** `window`相关设置对象 */
-const Win = require('./window');
+// const Win = require('./window');
 /** `散装`功能封装 */
-const Util = require('./util');
+// const Util = require('./util');
 
 /**
  * `JavaScript` 常用工具集合对象
  */
-const cTools = {
-  Date: Date,
-  Doc: Doc,
-  Win: Win,
-  Util: Util
+const jsUtilsHelper = {
+  // Date: Date,
+  // Doc: Doc,
+  // Win: Win,
+  // Util: Util
+}
+
+
+interface IJsUtilsHelper {
+  core: any;
+  assets: any;
+  store: any;
+  rem: any;
 }
 
 
@@ -30,4 +38,8 @@ const cTools = {
 //   window.cTools = cTools;
 // }
 
-window.cTools = cTools;
+interface Window {
+  jsUtilsHelper: any
+}
+
+window.jsUtilsHelper = jsUtilsHelper;

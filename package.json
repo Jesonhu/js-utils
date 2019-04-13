@@ -22,17 +22,25 @@
     "url": "https://github.com/Jesonhu/js-utils-helper/issues"
   },
   "homepage": "https://github.com/Jesonhu/js-utils-helper#readme",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "store": "^2.0.12"
+  },
   "devDependencies": {
+    "clean-webpack-plugin": "^2.0.1",
     "cz-conventional-changelog": "^2.1.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.4.3",
+    "uglifyjs-webpack-plugin": "^2.1.2",
     "webpack": "^4.16.2",
-    "webpack-command": "^0.4.1"
+    "webpack-cli": "^3.3.0",
+    "webpack-command": "^0.4.1",
+    "webpack-dev-server": "^3.3.1"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "dependencies": {
-    "lodash": "^4.17.10"
   }
 }
