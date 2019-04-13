@@ -9,4 +9,4 @@ const isStrEmpty = (str) => {
   str.length == 0 ? true : false; 
 }
 
-module.exports = isStrEmpty;
+export default isStrEmpty

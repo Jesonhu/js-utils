@@ -5,21 +5,21 @@
  * @see [一张图看懂encodeURI、encodeURIComponent、decodeURI、decodeURIComponent的区别](https://www.cnblogs.com/shuiyi/p/5277233.html)
  * @see [live-demo](https://codepen.io/Jesonhu/pen/yzBdvW)
  */
-const code = {
+export default class Code {
   /**
    * 对编码后的 `URI` 进行`解码`.
    * 
    * @param {string} str 需要解码的字符串
    * @return {string} 解码后的字符串
    */
-  deCode(str) {
+  static deCode(str: string) {
     // @see [`js unicode` 转中文]https://www.jb51.net/article/113158.htm
     // @see [escape()/unescape()](http://www.w3school.com.cn/jsref/jsref_unescape.asp)
     // @see [encodeURI()/decodeURI()](http://www.w3school.com.cn/jsref/jsref_decodeURI.asp)
     // 'a\u123' => 'a%u123';
     str = str.replace(/\\/g, '%');
     return decodeURIComponent(str);
-  },
+  }
 
   /**
    * 把字符串作为`URI`进行编码.
@@ -27,7 +27,7 @@ const code = {
    * @param {string} str 需要编码的字符串|URIstring.
    * @return {string} 编码后的字符串
    */
-  enCode(str) {
+  static enCode(str: string) {
     // @see [encodeURI](http://www.w3school.com.cn/jsref/jsref_encodeuri.asp)
     // let res = [];
     // for (let i = 0, length = str.length; i < length; i++) {
@@ -39,5 +39,3 @@ const code = {
     return encodeURIComponent(str);
   }
 }
-
-module.exports = code;
