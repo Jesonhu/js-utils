@@ -53,7 +53,7 @@ export default class JsUtilsHelper {
 		exports["jsUtilsHelper"] = factory();
 	else
 		root["jsUtilsHelper"] = factory();
-})(window, function() {
+})(global, function() {
   return JsUtilsHelper;
 })
 // 打包处理 end ====================
