@@ -1,4 +1,7 @@
+import Core from './Core/index';
 import Code from './Code';
+import IsUtils from './IsUtis/index';
+import Plugins from './plugins/index';
 /**
  * 常用工具合集.
  */
@@ -9,9 +12,7 @@ export default class JsUtilsHelper {
      * @static
      * @memberof JsUtilsHelper
      */
-    static core: {
-        coreError: typeof import("./core/error").default;
-    };
+    static core: typeof Core;
     /**
      * 资源相关的处理.
      *
@@ -19,8 +20,10 @@ export default class JsUtilsHelper {
      * @memberof JsUtilsHelper
      */
     static assets: {
-        addBatchBaseUrl: typeof import("./assets/index").addBatchBaseUrl;
-        getImgNearColor: typeof import("./assets/index").getImgNearColor;
+        addBatchBaseUrl: typeof import("./assets").addBatchBaseUrl;
+        addBaseUrl: typeof import("./assets").addBaseUrl;
+        getImgNearColor: typeof import("./assets").getImgNearColor;
+        addRichTextImgUrl: typeof import("./assets").addRichTextImgUrl;
     };
     /**
      * 编码相关处理.
@@ -29,4 +32,13 @@ export default class JsUtilsHelper {
      * @memberof JsUtilsHelper
      */
     static code: typeof Code;
+    /**
+     * isFn 方法功能集.
+     *
+     * @static
+     * @memberof JsUtilsHelper
+     */
+    static isUtils: typeof IsUtils;
+    /** 插件集合 */
+    static plugins: typeof Plugins;
 }

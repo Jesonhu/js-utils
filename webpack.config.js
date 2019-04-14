@@ -1,41 +1,41 @@
 const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const webpack = require('webpack');
 
-const webpack_base_config = {
-  mode: 'development',
-  entry: {
-    app: './src/index.ts',
-    vendor: ['lodash']
-  },
+module.exports = {
+  mode: "development",
+  devtool: "inline-source-map",
+  entry: "./src/index.ts",
   output: {
+    filename: "index.js",
     path: path.resolve(__dirname, 'dist'),
-    filename: "[name].js", 
-    publicPath: '',
-    chunkFilename: "[name].js",
+    // library: 'jsUtilsHelper',
+    // libraryTarget: 'umd'
   },
+  devServer: {
+    contentBase: path.resolve(__dirname, 'dist'),
+    hot: true
+  },
+  resolve: {
+    // Add `.ts` and `.tsx` as a resolvable extension.
+    extensions: [".ts", ".tsx", ".js"]
+  },
+  plugins: [
+    new BundleAnalyzerPlugin(),
+    new CleanWebpackPlugin(),
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin()
+  ],
   optimization: {
-    // splitChunks: {
-    //   chunks: 'async',
-    //   minSize: 30000,
-    //   maxSize: 0,
-    //   minChunks: 1,
-    //   maxAsyncRequests: 5,
-    //   maxInitialRequests: 3,
-    //   automaticNameDelimiter: '~',
-    //   name: true,
-    //   cacheGroups: {
-    //     vendors: {
-    //       test: /[\\/]node_modules[\\/]/,
-    //       priority: -10
-    //     },
-    //     default: {
-    //       minChunks: 2,
-    //       priority: -20,
-    //       reuseExistingChunk: true
-    //     }
-    //   }
-    // }
+    // @see https://webpack.js.org/plugins/uglifyjs-webpack-plugin
+    minimizer: [new UglifyJsPlugin()],
+  },
+  module: {
+    rules: [
+      // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
+      { test: /\.tsx?$/, loader: "ts-loader" }
+    ]
   }
-}
-
-module.exports = webpack_base_config;
+};

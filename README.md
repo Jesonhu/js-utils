@@ -1,3 +1,6 @@
-# JS Utils
+# JS common use utils. build width TS. output mode is `umd`.
 
-Tips: 开发中，暂无法用于项目中(developing, cant't be use in project)
+## Tips: 
+
++ plugins(插件)
+  + LoadMore--加载更多处理
