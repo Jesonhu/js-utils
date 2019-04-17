@@ -3,6 +3,7 @@ import Core from './Core/index';
 import assets from './assets';
 import Code from './Code';
 import IsUtils from './IsUtis/index';
+import Format from './Format';
 import Plugins from './plugins/index';
 
 /**
@@ -41,8 +42,13 @@ export default class JsUtilsHelper {
    */
   static isUtils = IsUtils
 
+
+  /** 格式化 */
+  static fromat = Format
+
   /** 插件集合 */
   static plugins = Plugins
+  
 }
 
 // 打包处理 start ====================

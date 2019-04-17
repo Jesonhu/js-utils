@@ -4,6 +4,8 @@
   <a href="https://www.npmjs.com/package/js-utils-helper"><img src="https://img.shields.io/npm/v/js-utils-helper.svg" alt="Version"></a>
 </p>
 
+[zh-cn-文档](./README_zh-cn.md)
+
 Notice: nodejs method use now is fail.
 
 ## Tips
