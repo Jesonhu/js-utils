@@ -1,6 +1,6 @@
 import Core from './Core/index';
 
-import assets from './assets';
+import assets, { Assets } from './assets';
 import Code from './Code';
 import IsUtils from './IsUtis/index';
 import Format from './Format';
@@ -9,22 +9,19 @@ import Plugins from './plugins/index';
 /**
  * 常用工具合集.
  */
-export default class JsUtilsHelper {
+namespace jsUtilsHelper {
   /**
    * 核心功能.
    *
    * @static
    * @memberof JsUtilsHelper
    */
-  static core = Core
+  core: Core
 
   /**
    * 资源相关的处理.
-   *
-   * @static
-   * @memberof JsUtilsHelper
    */
-  static assets = assets
+  assets: Assets
 
   /**
    * 编码相关处理.
@@ -32,7 +29,7 @@ export default class JsUtilsHelper {
    * @static
    * @memberof JsUtilsHelper
    */
-  static code = Code
+  code: Code
 
   /**
    * isFn 方法功能集.
@@ -40,16 +37,18 @@ export default class JsUtilsHelper {
    * @static
    * @memberof JsUtilsHelper
    */
-  static isUtils = IsUtils
+  isUtils: IsUtils
 
 
   /** 格式化 */
-  static fromat = Format
+  fromat: Format
 
   /** 插件集合 */
-  static plugins = Plugins
+  plugins: Plugins
   
 }
+
+export default jsUtilsHelper;
 
 // 打包处理 start ====================
 (function webpackUniversalModuleDefinition(root: any, factory) {
@@ -60,6 +59,6 @@ export default class JsUtilsHelper {
 	else
 		root["jsUtilsHelper"] = factory();
 })(global, function() {
-  return JsUtilsHelper;
+  return jsUtilsHelper;
 })
 // 打包处理 end ====================
