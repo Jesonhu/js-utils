@@ -3,4 +3,4 @@
 ## demo list
 
 + format
-  + [percent](./demo/format/percent.html)--百分比化
+  + [percent](https://jesonhu.github.io/js-utils-helper/demo/format/percent.html)--百分比格式化

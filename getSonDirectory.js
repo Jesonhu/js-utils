@@ -21,8 +21,8 @@ const getSonDirectory = (path) => {
       const innerFiles = fs.readdirSync(filePath);
       innerFiles.forEach(innerName => {
         const htmlFileName = innerName.replace('.html', '');
-        const formatOnlinePath = `${filePath}/${innerName}`.replace('./', 'aaa/')
-        resStr += `+ [${htmlFileName}](${filePath}/${innerName})\n`;
+        const formatOnlinePath = `${filePath}/${innerName}`.replace('./', BASE_URL)
+        resStr += `+ [${htmlFileName}](${formatOnlinePath})\n`;
       });
     }
   })
@@ -32,5 +32,5 @@ const getSonDirectory = (path) => {
 }
 
 const PATH = './demo'
-const BASE_URL = ''
+const BASE_URL = 'https://jesonhu.github.io/js-utils-helper/'
 getSonDirectory(PATH)
