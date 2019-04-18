@@ -4,52 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hello common tools</title>
+  <title>Hello jsUtilsHelper</title>
 </head>
 <body>
-  <!-- element start -->
-  <div id="app"></div>
-  <!-- element end -->
-
-  <script src="./dist/app.js"></script>
-  <script>
-
-    // 日期相关功能测试 start =========================
-    const cDate1 = new cTools.Date();
-
-    console.log( cDate1.format(new Date()) );
-    console.log( cDate1.format(new Date(), 'yyyy') );
-    console.log( cDate1.format(new Date(), 'dd-MM-yyy hh:mm:ss') );
-    // 日期相关测试 end =========================
-
-    // `document` 相关功能测试 start =========================
-    // rem 设置
-    cTools.Doc.setRem(640);
-    // `document` 相关功能测试 end =========================
-
-    // `window` 相关功能测试 start =========================
-    const localStorage_cTools = cTools.Win.localStorage;
-    localStorage_cTools.setLocal('IS_LOGIN', true);
-    const localValue = {
-      name: '张三',
-      avatar: '//xxxxx.xxx.png'
-    }
-    localStorage_cTools.setLocal( '', localValue);
-
-    setTimeout(() => {
-      const localValue2 = {
-        name: '李四',
-        age: 18
-      }
-      localStorage_cTools.setLocal('IS_LOGIN', false);
-      localStorage_cTools.setLocal( 'USER_INFO', localValue2, true);
-      console.log('更新了');
-    }, 5000);
-    // `window` 相关功能测试 end =========================
-
-
-
-
-  </script>
+  <h1>这是 jsUtilsHelper 浏览器端的功能测试页面<h1>
 </body>
 </html>
