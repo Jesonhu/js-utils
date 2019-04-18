@@ -1,6 +1,6 @@
 {
   "name": "js-utils-helper",
-  "version": "v0.2.0",
+  "version": "v0.3.0",
   "description": "JS Utils build with TS",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
