@@ -6,6 +6,7 @@
   "types": "dist/types/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack",
     "build": "webpack --mode production",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
   },
