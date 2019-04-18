@@ -9,19 +9,19 @@ import Plugins from './plugins/index';
 /**
  * 常用工具合集.
  */
-namespace jsUtilsHelper {
+const  jsUtilsHelper = {
   /**
    * 核心功能.
    *
    * @static
    * @memberof JsUtilsHelper
    */
-  core: Core
+  core: Core,
 
   /**
    * 资源相关的处理.
    */
-  assets: Assets
+  assets: Assets,
 
   /**
    * 编码相关处理.
@@ -29,7 +29,7 @@ namespace jsUtilsHelper {
    * @static
    * @memberof JsUtilsHelper
    */
-  code: Code
+  code: Code,
 
   /**
    * isFn 方法功能集.
@@ -37,18 +37,18 @@ namespace jsUtilsHelper {
    * @static
    * @memberof JsUtilsHelper
    */
-  isUtils: IsUtils
+  isUtils: IsUtils,
 
 
   /** 格式化 */
-  fromat: Format
+  fromat: Format,
 
   /** 插件集合 */
-  plugins: Plugins
+  plugins: Plugins,
   
 }
 
-export default jsUtilsHelper;
+console.log('对象吗', jsUtilsHelper);
 
 // 打包处理 start ====================
 (function webpackUniversalModuleDefinition(root: any, factory) {
@@ -62,3 +62,8 @@ export default jsUtilsHelper;
   return jsUtilsHelper;
 })
 // 打包处理 end ====================
+
+export default jsUtilsHelper;
+
+
+
