@@ -14,14 +14,6 @@ import { EventPhase } from './EventPhase';
  */
 export class Event extends HashObject {
   /**
-   * 在将显示对象直接添加到舞台显示列表或将包含显示对象的子树添加至舞台显示列表中时调度。
-   */
-  public static ADDED_TO_STAGE: string = "addedToStage";
-  /**
-   * 在从显示列表中直接删除显示对象或删除包含显示对象的子树时调度。
-   */
-  public static REMOVED_FROM_STAGE: string = "removedFromStage";
-  /**
    * 将显示对象添加到显示列表中时调度。
    */
   public static ADDED: string = "added";
@@ -29,11 +21,6 @@ export class Event extends HashObject {
    * 将要从显示列表中删除显示对象时调度。
    */
   public static REMOVED: string = "removed";
-
-  /**
-   * [广播事件] 进入新的一帧,监听此事件将会在下一帧开始时触发一次回调。这是一个广播事件，可以在任何一个显示对象上监听，无论它是否在显示列表中。
-   */
-  public static ENTER_FRAME: string = "enterFrame";
   /**
    * 渲染事件，监听此事件将会在本帧末即将开始渲染的前一刻触发回调，这是一个广播事件，可以在任何一个显示对象上监听，无论它是否在显示列表中。
    * 注意：每次您希望发送 Event.RENDER 事件时，都必须调用 stage.invalidate() 方法，由于每帧只会触发一次屏幕刷新，
@@ -94,17 +81,10 @@ export class Event extends HashObject {
    */
   public static CONNECT: string = "connect";
 
-
-  /**
-   * Event.LEAVE_STAGE 常量定义 leaveStage 事件对象的 type 属性的值。
-   */
-  public static LEAVE_STAGE: string = "leaveStage";
-
   /**
    * Event.SOUND_COMPLETE 常量定义 在声音完成播放后调度。
    */
   public static SOUND_COMPLETE: string = "soundComplete";
-
 
   /**
    * 创建一个作为参数传递给事件侦听器的 Event 对象。
@@ -278,7 +258,7 @@ export class Event extends HashObject {
    * 使用指定的 EventDispatcher 对象来抛出 Event 事件对象。抛出的对象将会缓存在对象池上，供下次循环复用。
    */
   public static dispatchEvent(target: IEventDispatcher, type: string, bubbles: boolean = false, data?: any): boolean {
-    let event: IOErrorEvent = Event.create(Event, type, bubbles);
+    let event: any = Event.create(Event, type, bubbles);
     let props: any = Event._getPropertyData(Event);
     if (data != undefined) {
       props.data = data;

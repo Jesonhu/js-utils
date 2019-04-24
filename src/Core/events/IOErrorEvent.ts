@@ -24,7 +24,7 @@ export class IOErrorEvent extends Event {
    * @param target {IEventDispatcher} 派发事件目标
    */
   public static dispatchIOErrorEvent(target: IEventDispatcher): boolean {
-    let event: IOErrorEvent = Event.create(IOErrorEvent, IOErrorEvent.IO_ERROR);
+    let event: any = Event.create(IOErrorEvent, IOErrorEvent.IO_ERROR);
     let result = target.dispatchEvent(event);
     Event.release(event);
     return result;
