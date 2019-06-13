@@ -1,8 +1,6 @@
 # JS 常用功能集合. 使用TS编写. 导出的模式为: umd.
 
-[en-docs](./README.md)
-
-+ [进度图](https://www.processon.com/view/link/5d021156e4b0a65d8099132a)
+[en-docs](./README.md) | [进度图](https://www.processon.com/view/link/5d021156e4b0a65d8099132a)
 
 + core--核心功能必须引入.
 
