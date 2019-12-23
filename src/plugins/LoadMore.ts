@@ -1,4 +1,4 @@
-import Core from '../Core/index';
+import Core from '../core/index';
 
 const { extend } = Core;
 

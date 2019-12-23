@@ -1,10 +1,14 @@
 import coreError from './error';
 
+import SimpleEventEmitter from './events/SimpleEventEmitter';
+
 export default class Core {
   /**
    * 显示错误.
    */
   static coreError = coreError
+
+  static SimpleEventEmitter = SimpleEventEmitter
 
   /**
    * 用一个对象来扩展另一个对象.

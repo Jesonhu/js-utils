@@ -9,7 +9,7 @@ module.exports = {
   devtool: "inline-source-map",
   entry: "./src/index.ts",
   output: {
-    filename: "index.js",
+    filename: "index.min.js",
     path: path.resolve(__dirname, 'dist'),
     // library: 'jsUtilsHelper',
     // libraryTarget: 'umd'

@@ -1,7 +1,7 @@
 const localStorage = require('./localStorage');
 const _ = require('lodash');
 
-const Win = {
+const dom = {
   localStorage: localStorage
 }
-module.exports = Win;
+module.exports = dom;

@@ -16,7 +16,8 @@
     "url": "git+https://github.com/Jesonhu/js-utils-helper.git"
   },
   "keywords": [
-    "js-utils-helper"
+    "js-utils-helper",
+    "fehelper"
   ],
   "author": "Jesonhu",
   "license": "MIT",
