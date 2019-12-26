@@ -1,5 +1,4 @@
 import Core from './core/index';
-
 import assets, { Assets } from './string/assets';
 import Code from './string/Code';
 import IsUtils from './boolean/index';
