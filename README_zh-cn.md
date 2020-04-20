@@ -34,3 +34,7 @@
 |名称|类型|描述|
 |--|:--:|--|
 |`LoadMore`|类|加载更多处理([详情](./docs/LoadMore.md))
+
+## 相关资源
+
++ [函数风格工具集](https://github.com/Jesonhu/fu-js)

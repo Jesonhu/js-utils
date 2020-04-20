@@ -16,4 +16,10 @@ Notice: nodejs method use now is fail.
   
  
 ## need add
+
 + [ ] 百分比处理功能
+
+
+## 相关资源
+
++ [函数风格工具集](https://github.com/Jesonhu/fu-js)
