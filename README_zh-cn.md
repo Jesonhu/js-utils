@@ -4,6 +4,14 @@
 
 + core--核心功能必须引入.
 
+## Tips
+
++ 命名空间: fehelper
++ core: core 目录下的文件为核心功能必须引入
++ plugins(插件)
+  + LoadMore--加载更多处理
+  
+
 
 *****
 + code--编码相关
